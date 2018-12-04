@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .GRZL {
+
+            width: 952px;
+            margin: 20px 0 0 15px;
+        }
+
+        .GRZL- {
+            height: 30px;
+            width: 952px;
+            background: #e6e6e6;
+        }
+
+        .GRZL- span {
+            line-height: 30px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .GRZL table {
+            width: 455px;
+            margin: 30px auto;
+        }
+
+        .GRZL table tr {
+            height: 50px;
+        }
+
+        .GRZL table tr td:nth-child(2n+1) {
+            width: 60px;
+        }
+
+        .GRZL table tr td .sex {
+            vertical-align: middle;
+            width: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            line-height: 48px;
+            padding-left: 10px;
+            border: 1px #d9d9d9 solid;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            border-width: 0px;
+            border-radius: 3px;
+            background: #d9d9d9;
+            outline: none;
+            color: black;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="GRZL">
+    <div class="GRZL-">
+        <span>个人资料</span>
+    </div>
+    <table border="0">
+        <tr>
+            <td>QQ号：</td>
+            <td id="QQ"><span>XXXXXXXXX</span></td>
+            <td><a href="###" onclick="QQ()">修改</a></td>
+        </tr>
+        <tr>
+            <td>*姓名：</td>
+            <td id="name1"><span>XXX</span></td>
+            <td><a href="###" onclick="name1()">修改</a></td>
+        </tr>
+        <tr>
+            <td>*性别：</td>
+            <td>
+                <input type="radio" value="" name="sex" checked="checked" class="sex">男
+                <input type="radio" value="" name="sex" class="sex">女
+            </td>
+            <td><a href="###">修改</a></td>
+        </tr>
+        <tr>
+            <td>*手机：</td>
+            <td id="photo"><span>XXXXXXXXXXX</span></td>
+            <td><a href="###" onclick="photo()">修改</a></td>
+        </tr>
+        <tr>
+            <td>*邮箱：</td>
+            <td id="email"><span>XXXX@163.com</span></td>
+            <td><a href="###" onclick="email()">修改</a></td>
+        </tr>
+        <tr>
+            <td>*地址：</td>
+            <td id="address"><span>XXXXXXXXX</span></td>
+            <td><a href="###" onclick="address()">修改</a></td>
+        </tr>
+    </table>
+    <div style="margin-left: 310px">
+        <button>确认</button>
+    </div>
+</div>
+</body>
+<script>
+
+    function QQ() {
+        var tr = document.getElementById("QQ");
+        tr.innerHTML = "<input type='text'>"
+    }
+
+    function name1() {
+        var tr = document.getElementById("name1");
+        tr.innerHTML = "<input type='text'>"
+    }
+
+    function photo() {
+        var tr = document.getElementById("photo");
+        tr.innerHTML = "<input type='text'>"
+    }
+
+    function email() {
+        var tr = document.getElementById("email");
+        tr.innerHTML = "<input type='text'>"
+    }
+
+    function address() {
+        var tr = document.getElementById("address");
+        tr.innerHTML = "<input type='text'>"
+    }
+
+</script>
+
+</html>
